@@ -24,6 +24,7 @@ background-color: transparent;
 border-radius: .3em;
 position: relative;
 overflow: hidden;
+float: right;
 cursor: pointer;
 transition: .5s;
 font-weight: 400;
@@ -224,7 +225,7 @@ border-radius: 50%;
 
 .user-label {
  position: absolute;
- left: 15px;
+ right: 15px;
  color: #e8e8e8;
  pointer-events: none;
  transform: translateY(1rem);
@@ -245,7 +246,7 @@ border-radius: 50%;
 </style>
 <body>
   <div class="topnav">
-    <a class="button2" href="/index.html"><i class="fa-solid fa-house"></i>الرئيسية</a>
+    <a class="button2" href="/"><i class="fa-solid fa-house"></i>الرئيسية</a>
     <a class="button3"> </a>
     <a class="button2" href="/3na.html"><i class="fa-solid fa-address-card"></i>عنا</a>
     <a class="button3"> </a>
@@ -257,24 +258,26 @@ border-radius: 50%;
   </div>
      <h1 id="3na">يوسف صالح الحربي</h1>
      <p class="w9f">1/1</p>
-     <button href="https://moe.gov.sa" class="button" target="_blank">البلانك</button>
-     <button class="button" href="https://moe.gov.sa" target="_self">اللي يفتح بنفس الصفحه</button>
+   <div>
+    <a class="button" href="http://google.com" target="_blank" >البلانك</a>
+    <a class="button" href="http://google.com" target="_self" >السيلف</a>
+   </div>
+    
+   
     <br>
     <br>
     <br>
     <br>
     <br>
     <br>
-    <div class="container">
-      <div class="container">
- <div class="row" style="margin-top: 10%;">
-   <div class="col-sm">
-    <img style="max-width: 100%; max-height: auto; border-radius: 15px;" src="../bacc.png">
+  
+    <img src="/bacc.png">
+  </div>
    <p id="tmal7fd"></p>
    <p id="tmalft7"></p>
    <div class="input-group">
-    <input required="" type="text" name="text" placeholder="اسمك" autocomplete="off" class="input" id="alshy">
-  
+    <input required="" type="text" name="text" autocomplete="off" class="input" id="alshy">
+    <label class="user-label">اسمك</label>
   </div>
    <br>
    <button onclick="hfd()" class="button">حفظ!</button>
